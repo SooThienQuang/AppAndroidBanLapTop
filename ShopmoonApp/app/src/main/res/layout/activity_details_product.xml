@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsProductActivity">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ic_baseline_keyboard_backspace_24"></Button>
+
+    <ViewFlipper
+        android:id="@+id/viewfliperslideproductdetails"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        ></ViewFlipper>
+
+    <ImageView
+        android:id="@+id/luotmua"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/viewfliperslideproductdetails"
+        android:src="@drawable/luotmua"></ImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/star"
+        android:gravity="center_vertical"
+        android:layout_below="@id/luotmua"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá sản phẩm">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_holo"
+            android:background="@drawable/ic_baseline_star_rate_24">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_holo"
+            android:background="@drawable/ic_baseline_star_rate_24">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_holo"
+            android:background="@drawable/ic_baseline_star_rate_24">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_holo"
+            android:background="@drawable/ic_baseline_star_rate_24">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_holo"
+            android:background="@drawable/ic_baseline_star_rate_24">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txttensanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/star"
+        android:textColor="@color/black"
+        android:textSize="18dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtgiasanpham"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/red_holo"
+        android:layout_below="@id/txttensanpham"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtgiasanpham"
+        android:textAlignment="center"
+        android:text="Thông số sản phẩm">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtthongso"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tt"
+        >
+    </TextView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigationdetails"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red_holo"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu_order"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

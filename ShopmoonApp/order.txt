@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `Order`;
+CREATE TABLE `Order` (
+  `orderID` int(11) NOT NULL AUTO_INCREMENT,
+  `proID` int NOT NULL,
+  `proPhoto` varchar(100) DEFAULT NULL,
+  `proName` varchar(1000) NOT NULL,
+  `cusID` int DEFAULT NULL,
+  `cusName` varchar(1000) NOT NULL,
+  `cusPhone` varchar(11) DEFAULT NULL,
+  `cusEmail` varchar(100) DEFAULT NULL,
+  `cusAddress` varchar(100) DEFAULT NULL,
+  `proPrice` float DEFAULT NULL,
+  `proQuantity` int DEFAULT NULL,
+  `proMoney` int DEFAULT NULL,
+`orderStatus` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`orderID`),
+  KEY `orderID` (`orderID`)
+)  ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;

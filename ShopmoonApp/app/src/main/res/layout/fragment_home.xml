@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray_holo"
+             android:layout_height="match_parent"
+    >
+
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPagerMain"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+   <ViewFlipper
+       android:id="@+id/viewfliperslide"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:background="@color/teal_200"></ViewFlipper>
+
+   <ImageView
+       android:id="@+id/pad"
+       android:layout_width="match_parent"
+       android:layout_height="20dp"
+       android:layout_below="@id/rvproducer"
+       android:src="@drawable/padding2">
+   </ImageView>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvproducer"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/viewfliperslide"
+       android:background="@color/teal_700">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvproduct"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/pad"
+       android:layout_marginTop="10dp"
+       android:background="@color/gray_holo"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MuaHangActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/orderbackhome"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtttt"
+        android:layout_below="@id/orderbackhome"
+        android:layout_width="match_parent"
+        android:text="Danh sách đơn hàng đã đặt"
+        android:textSize="30dp"
+        android:textColor="@color/red_holo"
+        android:layout_height="wrap_content">
+    </TextView>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@id/txtttt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rvorderpayment">
+</androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

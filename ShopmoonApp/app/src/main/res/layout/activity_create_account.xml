@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context=".LoginActivity">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="SHOPMOON"
+                    android:layout_marginTop="40dp"/>
+
+
+
+                <!--                <include-->
+                <!--                    layout="@layout/layout_login"/>-->
+            <LinearLayout
+                style="@style/linearParent"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:padding="@dimen/loginViewsMargin">
+
+                <TextView
+                    style="@style/headerTextPrimary"
+                    android:text="@string/register"
+                    android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        android:id="@+id/txtname"
+                        style="@style/modifiedEditText"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:hint="Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        android:id="@+id/txtphone"
+                        style="@style/modifiedEditText"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:hint="Mobile Number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        style="@style/modifiedEditText"
+                        android:id="@+id/txtmail"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:hint="@string/login_email_hint"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        style="@style/modifiedEditText"
+                        android:id="@+id/txtaddress"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:hint="Address"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        style="@style/modifiedEditText"
+                        android:id="@+id/txtpassword"
+                        android:hint="@string/login_password_hint"
+                        android:maxLines="1"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/signup_text_margin_top">
+                    <EditText
+                        style="@style/modifiedEditText"
+                        android:id="@+id/txtrepassword"
+                        android:hint="Repassword"
+                        android:maxLines="1"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    style="@style/loginButton"
+                    android:id="@+id/btnregisterr"
+                    android:layout_gravity="center"
+                    android:text="Register" />
+
+                <TextView
+                    style="@style/parent"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="@string/signup_login_hint"
+                    android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
